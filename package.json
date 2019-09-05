@@ -1,0 +1,68 @@
+{
+  "name": "react-package-template",
+  "version": "1.0.0",
+  "description": "Template for building react packages",
+  "main": "index.js",
+  "scripts": {
+    "compile-less": "lessc src/stylesheets/main.less main.css",
+    "start": "webpack-dev-server",
+    "prepublishOnly": "concurrently \"npm run transpile-js\" \"npm run compile-less\"",
+    "transpile-js": "babel src --out-dir . --ignore src/stylesheets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppak10/react-package-template.git"
+  },
+  "author": "ppak10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ppak10/react-package-template/issues"
+  },
+  "homepage": "https://github.com/ppak10/react-package-template#readme",
+  "dependencies": {
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^4.1.2",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.5",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^9.2.5",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "react-app-elements": "0.0.3",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "style-loader": "^1.0.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.1.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
