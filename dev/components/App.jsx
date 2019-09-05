@@ -11,7 +11,7 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 export default function App() {
   return (
     <Router>
-      <Navigation logo="react-package-template">
+      <Navigation logo="react-dnd-elements">
         <Link to="/1">Link 1</Link>
         <Link to="/2">Link 2</Link>
       </Navigation>

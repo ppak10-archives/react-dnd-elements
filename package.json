@@ -1,7 +1,7 @@
 {
-  "name": "react-package-template",
-  "version": "1.0.0",
-  "description": "Template for building react packages",
+  "name": "react-dnd-elements",
+  "version": "0.0.1",
+  "description": "Drag and drop elements adapted from react-dnd",
   "main": "index.js",
   "scripts": {
     "compile-less": "lessc src/stylesheets/main.less main.css",
@@ -11,16 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ppak10/react-package-template.git"
+    "url": "git+https://github.com/ppak10/react-dnd-elements.git"
   },
   "author": "ppak10",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ppak10/react-package-template/issues"
+    "url": "https://github.com/ppak10/react-dnd-elements/issues"
   },
-  "homepage": "https://github.com/ppak10/react-package-template#readme",
+  "homepage": "https://github.com/ppak10/react-dnd-elements#readme",
   "dependencies": {
-    "react": "^16.9.0"
+    "react": "^16.9.0",
+    "react-dnd": "^9.3.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

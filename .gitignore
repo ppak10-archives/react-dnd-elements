@@ -64,3 +64,11 @@ typings/
 *.swp
 dist
 src/css
+
+# Publish Output
+index.js
+components.js
+main.css
+proptypes.js
+!src/*
+!dev/*
